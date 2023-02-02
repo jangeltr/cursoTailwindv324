@@ -1,0 +1,22 @@
+{
+  "name": "cursotailwind",
+  "version": "1.0.0",
+  "description": "Mi proyecto do como aplicar tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jangeltr/cursoTailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jangeltr/cursoTailwind/issues"
+  },
+  "homepage": "https://github.com/jangeltr/cursoTailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

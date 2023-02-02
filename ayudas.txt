@@ -1,0 +1,26 @@
+
+1.- PARA UTILIZAR tailwind  //framework css
+
+npm init
+npm install -D tailwindcss
+npx tailwindcss init
+
+2.- En el archivo tailwind.config.js que se genera
+    modificar la linea 
+        content: ["./src/**/*.{html,js}"],
+
+3.- En el archivo tailwind_input.css
+    agregar
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+4.- En el index.html enlazar con el tailwind_output
+    <link rel="stylesheet" href="./css/tailwind_output.css">
+
+5.- 
+    Ejecutar el comando
+    npx tailwindcss -i ./tailwind/tailwind_input.css -o ./src/css/tailwind_output.css --watch
+    
+    para generar los estilos aplicados, permanecera en ejecucion, 
+    si se detiene debera rekejecutarse cada que agamos cambios a los estilos
