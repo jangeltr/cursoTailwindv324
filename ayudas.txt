@@ -1,6 +1,11 @@
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 1.- PARA UTILIZAR tailwind  //framework css
 
+    Durante el desarrollo de un sitio se recomienda utilizar
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+Cuando el sitio ya esta en produccion (operacion o funcionamiento) se recomienda que ya sea parte de nuestro proyecto 
 npm init
 npm install -D tailwindcss
 npx tailwindcss init
@@ -24,3 +29,27 @@ npx tailwindcss init
     
     para generar los estilos aplicados, permanecera en ejecucion, 
     si se detiene debera rekejecutarse cada que agamos cambios a los estilos
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+PARA UTILIZAR FlowBite: es una libreria de componentes para tailwind
+
+1.- npm install flowbite
+
+2.- En el archivo tailwind.config.js que se genera
+
+module.exports = {
+  content: [
+    "./src/html/**/*.{html,js}",
+    "./node_modules/flowbite/**/*.js"   //agregar esta linea
+    ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('flowbite/plugin')          //agregar esta linea
+  ],
+}
+
+3.- En el archivo index.html agregar esta linea en el head
+
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
