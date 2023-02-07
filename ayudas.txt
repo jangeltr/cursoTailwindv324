@@ -23,12 +23,17 @@ npx tailwindcss init
 4.- En el index.html enlazar con el tailwind_output
     <link rel="stylesheet" href="./css/tailwind_output.css">
 
-5.- 
-    Ejecutar el comando
+5.- Ejecutar el comando
     npx tailwindcss -i ./tailwind/tailwind_input.css -o ./src/css/tailwind_output.css --watch
     
     para generar los estilos aplicados, permanecera en ejecucion, 
-    si se detiene debera rekejecutarse cada que agamos cambios a los estilos
+    si se detiene debera re-ejecutarse cada que hagamos cambios a los estilos
+
+6.- En package.json, en "scripts" agregar 
+    "tw:build" : "tailwind -i ./tailwind/tailwind_input.css -o ./src/css/tailwind_output.css"
+    para ejecutar el comando 
+    npm run tw:build
+    en lugar de todo el comando especificado en la instruccion 5
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PARA UTILIZAR FlowBite: es una libreria de componentes para tailwind
