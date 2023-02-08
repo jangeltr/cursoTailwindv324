@@ -35,6 +35,11 @@ npx tailwindcss init
     npm run tw:build
     en lugar de todo el comando especificado en la instruccion 5
 
+7.- Al terminar el proyecto 
+    ejecutar el comando
+    npx tailwindcss ./tailwind/tailwind_input.css -o ./src/css/tailwind_output.css --minify
+    para generar el archivo css optimizado para produccion, quitando todo lo que no necesita
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PARA UTILIZAR FlowBite: es una libreria de componentes para tailwind
 

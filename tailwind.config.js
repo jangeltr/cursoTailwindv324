@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',                //Necesaria para poder activar el modo oscuro
   content: [
     "./src/html/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"//para usar la libreria de componentes flowbite
